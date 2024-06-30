@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Run custom-kernel --update after kernel updates
+if [ -x /usr/bin/custom-kernel ]; then
+    /usr/bin/custom-kernel --update
+fi
