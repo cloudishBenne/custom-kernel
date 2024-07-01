@@ -413,7 +413,7 @@ function update_to_next_kernel() {
     echo -e "\nThe new custom kernel is: ${next_kernel}\n"
   else
     echo -e "\nNo next kernel found for current custom kernel: ${current_custom_kernel}\n"
-    exit 1
+    exit 0
   fi
 
   update_kernel_links "${next_kernel}" "${BOOT_PATH}"
